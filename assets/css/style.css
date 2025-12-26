@@ -1,0 +1,831 @@
+/* Local Font */
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #ffffff;
+    font-size: 16px;
+}
+
+/* ================= TOP GREEN BAR ================= */
+.top-green-bar {
+    height: 52px;                
+    background-color: #0F4C3A;
+    position: relative;
+}
+
+.top-right-content {
+    position: absolute;
+    right: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.language-switch {
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.social-links {
+    display: flex;
+    gap: 14px;
+}
+
+.social-links img {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0) invert(1);
+}
+
+/* ================= MAIN HEADER ================= */
+.main-header-bg {
+    height: 135px;
+    background: #ffffff;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;   /* ⭐ IMPORTANT */
+}
+
+
+/* LOGO (NO SCALING) */
+.logo {
+    position: absolute;
+    left: 32px;    
+    top: 50%;       
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 100px;   
+    width: auto;
+    height: auto;
+    display: block;
+  
+}
+
+/* ================= BUTTONS ================= */
+.header-buttons {
+    position: absolute;
+    right: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 14px;
+}
+
+/* SIGN UP BUTTON */
+.btn-sign-up {
+    width: 104px;              
+    height: 44px;              
+    padding: 22px 14px;         
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;            
+    font-weight: 500;
+    color: #0F4C3A;
+    border: 2px solid #0F4C3A;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* CREATE FREE ACCOUNT BUTTON */
+.btn-create-account {
+    width: 195px;              
+    height: 44px;              
+    padding: 22px 14px;         
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #0F4C3A;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* =====================
+   FONT SETUP
+===================== */
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-SemiBold.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Bold.ttf');
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* =====================
+   FONT
+===================== */
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+/* =====================
+   HERO SECTION
+===================== */
+.hero {
+    height: 665px;             
+    background: url("../images/bg-hero.png") no-repeat center/cover;
+    display: flex;
+    align-items: center;
+}
+
+/* =====================
+   HERO CONTAINER
+===================== */
+.hero-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+/* =====================
+   LEFT CONTENT
+===================== */
+.hero-content {
+    max-width: 600px;
+    margin: 0px 19px;
+}
+
+/* TITLE */
+.hero-title {
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 170%;
+    color: #ffffff;
+}
+
+
+.confidence-line {
+    position: relative;
+    display: inline-block;
+}
+
+.confidence-line::after {
+    content: "";
+    position: absolute;
+
+    left: 66px;
+    bottom: 3px; /* text ke niche gap */
+
+    width: 100%;
+    height: 12px;
+
+    background: url("../images/line.png") no-repeat center;
+    background-size: contain;
+}
+
+
+/* TEACHER BADGE */
+.teacher-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 281px;
+    height: 83px;
+
+    background-color: #FDB913;   /* yellow bg */
+    border-radius: 10px;
+
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 1;
+    color: #FFFFFF;
+
+    transform: rotate(-2.79deg);
+
+    margin: 0 6px;
+    vertical-align: middle;
+}
+
+
+
+/* PARAGRAPH */
+.hero-para {
+    width: 560.63px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #ffffff;
+    margin-top: 25px;
+}
+
+/* =====================
+   BUTTON
+===================== */
+.hero-btn {
+    width: 324px;
+    height: 65px;
+    margin-top: 40px;
+    padding: 0 50px;
+    background: #ffc21c;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+/* BUTTON TEXT */
+.btn-text {
+    font-size: 24px;
+    font-weight: 600;
+    color: #0c3b2e;
+    white-space: nowrap;
+}
+
+/* BUTTON ICON */
+.btn-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 29px;
+    background: #0F4C3A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =====================
+   RIGHT IMAGE
+===================== */
+.hero-media {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-media img {
+    max-width: 520px;
+    border-radius: 20px;
+    margin: 0px -125px;
+}
+
+
+
+/* =========================
+   WHY ORELAO SECTION
+========================= */
+.why-orelao {
+    background: #F0F4F5;
+    padding: 100px 0px; /* outer padding same rehne do */
+    text-align: center;
+}
+
+/* TOP BADGE */
+.flexible-badge {
+    width: 225px;
+    height: 32px;
+    margin: 0 auto 24px;
+    background: #4A8881;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* TITLE */
+.section-title {
+    font-size: 60px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 24px; /* ✅ 24 */
+}
+
+/* PARA */
+.section-para {
+    max-width: 763px;
+    margin: 0 auto 24px; /* ✅ 24 */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #0F4C3A;
+}
+
+/* =========================
+   TABS
+========================= */
+.tabs-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 24px;          /* ✅ 24 */
+    margin-bottom: 24px; /* ✅ 24 */
+}
+
+.tab-btn {
+    width: 274px;
+    height: 49px;
+    background: #0F4C3A;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* icon–text gap (ye internal hai, OK) */
+}
+
+.tab-btn img {
+    width: 18px;
+    height: 18px;
+}
+
+/* =========================
+   LINE BELOW TABS
+========================= */
+.tab-line {
+    width: 802px;
+    height: 3px;
+    background: #0F4C3A;
+    margin: 0 auto 24px;
+    position: relative;
+    overflow: hidden; /* 🔥 important */
+}
+
+/* WATER FLOW */
+.active-indicator {
+    position: absolute;
+    top: -1.5px;
+    left: -30%;
+    width: 30%;
+    height: 6px;
+    background: #FDB913;
+    border-radius: 10px;
+
+    animation: waterFlow 10.5s ease-in-out infinite; 
+}
+
+
+/* KEYFRAMES */
+@keyframes waterFlow {
+    0% {
+        left: -30%;
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    50% {
+        left: 50%;
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        left: 110%;
+        opacity: 0;
+    }
+}
+
+
+
+/* =========================
+   CHOOSE TEACHER SECTION
+========================= */
+.choose-teacher {
+    background: #F0F4F5;
+    padding-bottom: 100px;
+}
+
+.choose-container {
+    max-width: 1300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+/* LEFT IMAGE */
+.choose-media img {
+    width: 100%;
+    
+}
+
+/* RIGHT CONTENT */
+.choose-content {
+    max-width: 600px;
+}
+
+/* BADGE */
+.choice-badge {
+    width: 234px;
+    height: 32px;
+    background: #4A8881;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+/* TITLE */
+.choose-title {
+    width: 436px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+/* PARAGRAPH */
+.choose-para {
+    width: 582px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+/* POINTS */
+.choose-points {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 32px;
+}
+
+.choose-points li {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.choose-points img {
+    width: 20px;
+    margin-top: 2px;
+}
+
+.choose-btn {
+    width: 218px;
+    height: 50px;
+    background: #F8C62F;
+    border-radius: 50px;
+
+    position: relative;               /* IMPORTANT */
+    display: flex;
+    align-items: center;
+
+    padding-left: 28px;               /* text left space */
+    padding-right: 6px;               /* icon edge space */
+
+    text-decoration: none;
+    box-shadow: 4px 6px 0px 0px #03594E;
+}
+
+/* TEXT */
+.choose-btn span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0F4C3A;
+    line-height: 1;
+}
+
+/* ICON – RIGHT EDGE TOUCH */
+.choose-btn img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+
+    position: absolute;
+    right: 1px;                   
+    top: 50%;
+    transform: translateY(-50%);
+
+    filter: drop-shadow(0px 0px 19px rgba(0, 0, 0, 0.25));
+}
+
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+
+
+
+/* ================= GLOBAL SECTION ================= */
+.global-section {
+  padding: 100px 100px;
+  background: #ffffff;
+}
+
+/* BADGE */
+.global-badge {
+  width: 251px;
+  height: 32px;
+  background: #4A8881;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+/* TITLE + BUTTON ROW */
+.global-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* TITLE */
+.global-title {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 150%;
+  color: #000000;
+}
+
+/* BUTTON WIDTH FIX */
+.global-btn {
+  width: 203px;
+}
+
+/* ================= CARDS ================= */
+.global-cards {
+  display: flex;
+  justify-content: center;   /* boxes center */
+  gap: 60px;                 /* 50px spacing */
+  margin-top: 100px;
+}
+
+
+/* CARD */
+.global-card {
+  width: 400px;
+  height: 600px;
+  background: #0F4C3A;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 8px 8px 0px #F8C62F;
+  color: #ffffff;
+  
+}
+
+/* IMAGE */
+.global-card-img {
+  width: 338px;
+  height: 295px;
+  object-fit: cover;
+ 
+  margin-bottom: 40px;
+}
+
+/* CARD TITLE */
+.global-card-title {
+  font-size: 24px;
+  font-weight: 600;
+  width: 280px;
+  margin-bottom: 22px;
+}
+
+/* CARD PARA */
+.global-card-para {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  width: 333px;
+  margin-bottom: 22px;
+}
+
+/* LEARN MORE */
+.global-learn {
+  width: 155px;
+  height: 50px;
+
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+
+  border: 1px solid #F8C62F;
+  border-radius: 40px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  padding-right: 36px;   /* text ke liye space, icon ke liye nahi */
+}
+
+/* ICON IMAGE */
+.global-learn img {
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+  right: 1px;
+  z-index: 1;
+}
+
+
+/* SECTION BG */
+.community-section {
+  background: url("../images/Section.png") no-repeat center / cover;
+  padding: 100px 0px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* BADGE */
+.badge {
+  width: 225px;
+  height: 32px;
+  margin: 0 auto 24px;
+  background: #F0F4F5;
+  border-radius: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+  font-weight: 500;
+  color: #0F4C3A;
+}
+
+/* TITLE */
+.section-heading {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 48px;
+}
+
+/* CARDS WRAPPER */
+.cards {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+/* CARD */
+.card {
+  width: 580px;
+  height: 380px;
+  background: #ffffff;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 24px;
+}
+
+/* IMAGE */
+.card-image img {
+    width: 315px;
+    height: auto;
+    padding-top: 73px;
+    border-radius: 22px;
+}
+/* CONTENT */
+.card-content {
+  text-align: left;
+}
+
+.card-content h3 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 22px;
+}
+
+.card-content p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 22px;
+  line-height: 26px;
+}
+/* BUTTON */
+.cta-btn-Get {
+  width: 216px;
+  height: 50px;
+  background: #FDB913;
+  border-radius: 50px;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-right: 52px;   /* 👈 icon ke liye space */
+
+  text-decoration: none;
+  box-shadow: 5px 6px 0px 0px #0F4C3A;
+}
+
+/* TEXT */
+.cta-btn-Get span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0F4C3A;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* ICON */
+.cta-btn-Get img {
+  position: absolute;
+  right: 1px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+
+  filter: drop-shadow(0px 0px 19px rgba(0,0,0,0.25));
+}
